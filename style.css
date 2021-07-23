@@ -119,4 +119,11 @@
   .list-item-text {
     display: none;
   }
+  .sidebar-bottom{
+    flex-direction: column;
+  }
+  .color-box{
+    margin-bottom : 10px;
+    margin-right: 0px;
+  }
 }
