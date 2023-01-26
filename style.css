@@ -6,13 +6,18 @@
 .sidebar {
   width: 180px;
   height: 100vh;
+  position: fixed;
+  overflow-y: scroll;
   background-color: #111827;
   color: #9ca3af;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+/* width */
+.sidebar::-webkit-scrollbar {
+  width: 0px;
+}
 .sidebar-top,
 .sidebar-center,
 .sidebar-bottom {
@@ -118,5 +123,11 @@
   .brand,
   .list-item-text {
     display: none;
+  }
+  .sidebar-bottom{
+    flex-direction: column;
+  }
+  .color-box{
+    margin:0px 0px 10px 0px;
   }
 }
